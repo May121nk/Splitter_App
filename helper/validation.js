@@ -56,9 +56,12 @@ exports.userValidation = async (email) => {
     var user = await model.User.findOne({
         emailId: email
     })
-    if (!user)
+    if (!user && user.length <= 2 ){
+
+        console.warn(" is required atleast three character")
         return false
-    else
+    }
+    else 
         return true
 }
 

@@ -2,7 +2,7 @@ import { Link as RouterLink } from 'react-router-dom';
 // @mui
 import { styled } from '@mui/material/styles';
 import { Button, Typography, Container, Box, Stack } from '@mui/material';
-import Copyright from './Copyright';
+
 
 import configData from '../config.json'
 
@@ -40,9 +40,7 @@ export default function Page404() {
             Go to Home
           </Button>
 
-          <Stack spacing={3} sx={{mt: 5}}>
-                <Copyright/>
-            </Stack> 
+        
         </ContentStyle>
       </Container>
   )
